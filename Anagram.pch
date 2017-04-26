@@ -1,0 +1,113 @@
+//
+//  Anagram.pch
+//  Anagram
+//
+//  Created by Ashok Choudhary on 25/04/16.
+//  Copyright © 2016 squarebits. All rights reserved.
+//
+
+#ifndef Anagram_pch
+#define Anagram_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import <UIKit/UIKit.h>
+#import "APIsList.h"
+#import "ObjUser.h"
+#import "XMPPManager.h"
+#import "AppDelegate.h"
+#import "MBProgressHUD.h"
+
+
+
+
+#define kXMPPServerDomain                          @"anagramsio.com"
+#define kXMPPServerHost                            @"anagramsio.com"
+
+#define kXMPPmyJID                                 @"kXMPPmyJID"
+#define kXMPPmyPassword                            @"kXMPPmyPassword"
+#define kBotId                                     @"anagram-bot"
+
+#define kAppName                                   @"Anagrams"
+
+#define FBID                                      @"FACEBOOKID"
+
+
+#define isLoggedIn                                 @"isLoggedIn"
+#define isSocialLogin                              @"isSocialLogin"
+#define kSavedUser                                 @"kSavedUser"
+#define kUserEmail                                 @"USEREmail"
+#define kUserPassword                              @"USERPassword"
+#define kPassword                                  @"123456"
+//UserDetails
+
+#define kUserId                                    @"userID"
+#define kUserJId                                   @"UserJID"
+#define kTYPE_TEXT                                 @"CHAT"
+
+#define NodataLeftToSlide                          @"NODATALEFT"
+#define MoveBackWhenDataBlank                      @"moveback"
+
+#define Nodataleft_after_AcceptRequest             @"NODATALEFTAFTERACCEPTREQUEST"
+
+
+//subjects to 
+
+#define INVITE_USER                                @"INVITE"
+
+#define INVITE_SEND_NOTIFICATION                   @"INVITE_FRIEND"
+#define INVITATION_ACCEPTED                        @"INVITATION_ACCEPTED"
+#define INVITATION_REJECTED                        @"INVITATION_REJECTED"
+#define START_GAME                                 @"START_GAME"
+#define STACK_TAPPED                               @"STACK_TAPPED"
+#define SUBMIT_WORD                                @"SUBMIT_WORD"
+
+#define GAME_TURN_CHANGE                           @"CHANGE_USER_TURN"
+
+#define USER_TURNGAME_WON                          @"WINNER"
+#define TURN_CHECKER                               @"TURN_CHECKER"
+
+#define WORD_COMPLETED                             @"WORD_COMPLETED"
+#define SUBMIT_WORD_ERROR                          @"SUBMIT_WORD_ERROR"
+#define GAME_RESULT                                @"GAME_RESULT"
+#define GAME_RESULT                                @"GAME_RESULT"
+#define PLAYER_WON                                 @"PLAYER_WON"
+#define GAME_TIMEOUT                               @"GAME_TIMEOUT"
+#define Game_Quit_User                             @"GAME_QUIT"
+
+
+
+#define kServerLoginFail                           @"loginFailedNotification"
+#define kServerLoginSuccess                        @"loginSuccessNotification"
+#define kServerDisconnect                          @"serverDisconnect"
+#define kNukeMyXMPPBot                             @"group-bot"
+
+//XMPP Messages
+#define XMPP_ERROR                                 @"error"
+#define XMPP_ERROR_CONFILCT                        @"conflict"
+#define XMPP_ERROR_CONFILCT_NS                     @"urn:ietf:params:xml:ns:xmpp-stanzas"
+#define kXMPPResource                              @"openfireiOS"
+
+#define Anagrams_Defaults                           [NSUserDefaults standardUserDefaults]
+#define Anagrams_NotificationCenter                 [NSNotificationCenter defaultCenter]
+#define App_Delegate                                ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+
+
+#define k5CrownsPurchase                                 @"com.5crowns"
+#define k25CrownsPurchase                                @"com.25Crowns"
+#define k100CrownsPurchase                               @"com.100Crowns"
+#define k500CrownsPurchase                               @"com.500Crowns"
+#define kUnlimitedCrownsPurchase                         @"com.unlimitedcrowns"
+
+#define kNumberOfCrowns                                  @"numberofCrowns"
+#define kIsUnlimitedCrownsAdded                          @"isUnlimitedCrowns"
+
+#define isTurnBasedGame                                  @"TurnBasedGame"
+#define isGameSoundOn                                    @"isGameSoundOn"
+#define isGamePushNotiOn                                 @"isPushNotificationOn"
+
+
+
+#endif /* Anagram_pch */
